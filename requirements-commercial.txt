@@ -1,0 +1,33 @@
+# Core Capsule AI dependencies
+-r requirements_versions.txt
+
+# Authentication & User Management
+PyJWT==2.8.0
+bcrypt==4.1.2
+python-multipart==0.0.20
+
+# Payment Processing
+requests==2.31.0
+stripe==8.0.0
+
+# Database
+SQLAlchemy==2.0.23
+
+# Additional UI dependencies
+gradio==3.41.2
+
+# Development & Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+black==23.12.1
+isort==5.13.2
+flake8==6.1.0
+
+# Security
+cryptography==41.0.7
+
+# Email (for future features)
+# sendgrid==6.10.0
+
+# Analytics (for future features)
+# mixpanel==4.10.0

@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  capsule-ai:
+    build: .
+    ports:
+      - "7860:7860"
+    environment:
+      - CAPSULE_ENV=production
+      - CAPSULE_SECRET_KEY=${CAPSULE_SECRET_KEY}
+      - DATABASE_URL=sqlite:///data/capsule_ai.db
+      - CRYPTOMUS_MERCHANT_ID=${CRYPTOMUS_MERCHANT_ID}
+      - CRYPTOMUS_API_KEY=${CRYPTOMUS_API_KEY}
+      - STRIPE_API_KEY=${STRIPE_API_KEY}
+      - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET}
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./outputs:/app/outputs
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: PostgreSQL for production
+  # postgres:
+  #   image: postgres:15
+  #   environment:
+  #     POSTGRES_DB: capsule_ai
+  #     POSTGRES_USER: capsule
+  #     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+
+  # Optional: Redis for caching
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:

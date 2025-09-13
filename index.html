@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capsule AI - Professional AI Image Generation</title>
+    <meta name="description" content="Transform your ideas into stunning visuals with the most advanced SDXL-powered image generation platform. Professional quality, lightning fast, enterprise-ready.">
+    <meta name="keywords" content="AI image generation, SDXL, professional photography, digital art, creative tools">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/capsule-ai.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Capsule AI - Professional AI Image Generation">
+    <meta property="og:description" content="Transform your ideas into stunning visuals with advanced SDXL technology">
+    <meta property="og:image" content="/static/images/og-image.jpg">
+    <meta property="og:url" content="https://capsule-ai.com">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-capsule"></i>
+                <span>Capsule AI</span>
+            </div>
+
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="/app" class="btn btn-secondary">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </a>
+                <a href="/app" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Start Creating
+                </a>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>#1 Professional AI Image Generation Platform</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Transform Your Ideas Into
+                    <span class="gradient-text">Stunning Visuals</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Experience the future of creative workflows with Capsule AI.
+                    Generate professional-quality images in seconds using advanced SDXL technology.
+                    No technical expertise required.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">500K+</div>
+                        <div class="stat-label">Images Generated</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Happy Creators</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="/app" class="btn btn-primary btn-large">
+                        <i class="fas fa-magic"></i>
+                        Start Creating Free
+                    </a>
+                    <a href="#demo" class="btn btn-secondary btn-large">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </a>
+                </div>
+
+                <div class="hero-trust">
+                    <div class="trust-logos">
+                        <span>Trusted by:</span>
+                        <div class="logos">
+                            <div class="logo-placeholder">Adobe</div>
+                            <div class="logo-placeholder">Canva</div>
+                            <div class="logo-placeholder">Figma</div>
+                            <div class="logo-placeholder">Shopify</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="/static/images/hero-image.jpg" alt="AI Generated Image" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="prompt-display">
+                                <i class="fas fa-quote-left"></i>
+                                <span>"A cyberpunk city at night with neon lights and flying cars"</span>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-bolt"></i>
+                            <span>2s generation</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-palette"></i>
+                            <span>100+ styles</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-crown"></i>
+                            <span>Pro quality</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            <div class="bg-shape shape-3"></div>
+            <div class="particles"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features for Creative Professionals</h2>
+                <p>Everything you need to bring your creative vision to life</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Advanced AI Models</h3>
+                    <p>Powered by SDXL 1.0 with custom fine-tuned models for professional results</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> SDXL Base & Refiner models</li>
+                        <li><i class="fas fa-check"></i> Custom LoRA support</li>
+                        <li><i class="fas fa-check"></i> 100+ artistic styles</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card featured">
+                    <div class="feature-badge">Most Popular</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Intelligent Prompt Processing</h3>
+                    <p>GPT-2 powered prompt enhancement for consistent, high-quality results</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Automatic prompt optimization</li>
+                        <li><i class="fas fa-check"></i> Multi-language support</li>
+                        <li><i class="fas fa-check"></i> Context-aware enhancement</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Professional Inpainting</h3>
+                    <p>Remove, replace, or modify objects with pixel-perfect precision</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> SAM-powered masking</li>
+                        <li><i class="fas fa-check"></i> GroundingDINO integration</li>
+                        <li><i class="fas fa-check"></i> Smart object detection</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                    <h3>Advanced ControlNet</h3>
+                    <p>Precise control over composition, pose, and artistic style</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Pose and structure control</li>
+                        <li><i class="fas fa-check"></i> Depth and normal mapping</li>
+                        <li><i class="fas fa-check"></i> Edge detection</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Lightning Fast Generation</h3>
+                    <p>Generate images in 1-3 seconds with optimized performance</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> GPU acceleration</li>
+                        <li><i class="fas fa-check"></i> Batch processing</li>
+                        <li><i class="fas fa-check"></i> Real-time preview</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>SOC 2 compliant with end-to-end encryption and audit trails</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> End-to-end encryption</li>
+                        <li><i class="fas fa-check"></i> SOC 2 Type II certified</li>
+                        <li><i class="fas fa-check"></i> GDPR compliant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2>See Capsule AI in Action</h2>
+                    <p>Watch how easy it is to create professional-quality images with our intuitive interface</p>
+                    <div class="demo-features">
+                        <div class="demo-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>2-minute setup</span>
+                        </div>
+                        <div class="demo-feature">
+                            <i class="fas fa-users"></i>
+                            <span>50K+ users</span>
+                        </div>
+                        <div class="demo-feature">
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5 rating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-video">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Watch Demo Video</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the perfect plan for your creative needs</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="amount">$0</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for trying Capsule AI</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature"><i class="fas fa-check"></i> 50 free credits</div>
+                        <div class="feature"><i class="fas fa-check"></i> Basic image generation</div>
+                        <div class="feature"><i class="fas fa-check"></i> Standard quality</div>
+                        <div class="feature"><i class="fas fa-check"></i> Community support</div>
+                        <div class="feature disabled"><i class="fas fa-times"></i> Advanced features</div>
+                        <div class="feature disabled"><i class="fas fa-times"></i> Commercial use</div>
+                    </div>
+                    <a href="/app" class="btn btn-secondary">Get Started Free</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Creator</h3>
+                        <div class="price">
+                            <span class="amount">$15</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Ideal for freelancers and creators</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature"><i class="fas fa-check"></i> 200 credits/month</div>
+                        <div class="feature"><i class="fas fa-check"></i> All generation modes</div>
+                        <div class="feature"><i class="fas fa-check"></i> High-resolution output</div>
+                        <div class="feature"><i class="fas fa-check"></i> Priority support</div>
+                        <div class="feature"><i class="fas fa-check"></i> Commercial use license</div>
+                        <div class="feature"><i class="fas fa-check"></i> Advanced features</div>
+                    </div>
+                    <a href="/app" class="btn btn-primary">Start Creating</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="amount">$35</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For serious creators and small teams</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature"><i class="fas fa-check"></i> 500 credits/month</div>
+                        <div class="feature"><i class="fas fa-check"></i> Everything in Creator</div>
+                        <div class="feature"><i class="fas fa-check"></i> API access</div>
+                        <div class="feature"><i class="fas fa-check"></i> Custom models</div>
+                        <div class="feature"><i class="fas fa-check"></i> Team collaboration</div>
+                        <div class="feature"><i class="fas fa-check"></i> Advanced analytics</div>
+                    </div>
+                    <a href="/app" class="btn btn-secondary">Go Professional</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Studio</h3>
+                        <div class="price">
+                            <span class="amount">$75</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For creative studios and agencies</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature"><i class="fas fa-check"></i> 1200 credits/month</div>
+                        <div class="feature"><i class="fas fa-check"></i> Everything in Professional</div>
+                        <div class="feature"><i class="fas fa-check"></i> White-label options</div>
+                        <div class="feature"><i class="fas fa-check"></i> Dedicated support</div>
+                        <div class="feature"><i class="fas fa-check"></i> Custom integrations</div>
+                        <div class="feature"><i class="fas fa-check"></i> SLA guarantee</div>
+                    </div>
+                    <a href="/app" class="btn btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+
+            <div class="pricing-footer">
+                <p>💳 All plans include: Credit card, PayPal, and cryptocurrency payments</p>
+                <p>🔄 Upgrade, downgrade, or cancel anytime • 💯 30-day money-back guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Loved by Creative Professionals</h2>
+                <p>Join thousands of creators who trust Capsule AI</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Capsule AI has revolutionized our creative workflow. The quality and speed are unmatched. We've replaced three different tools with just Capsule AI."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/static/images/avatar-1.jpg" alt="Sarah Chen" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah Chen</h4>
+                            <span>Creative Director, Design Studio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"As a freelance photographer, Capsule AI helps me create concepts that were previously impossible. The inpainting feature is a game-changer."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/static/images/avatar-2.jpg" alt="Marcus Rodriguez" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Marcus Rodriguez</h4>
+                            <span>Freelance Photographer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The API integration is seamless. We've automated our entire content creation pipeline using Capsule AI. Enterprise-grade performance."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/static/images/avatar-3.jpg" alt="Jennifer Park" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Jennifer Park</h4>
+                            <span>CTO, Tech Startup</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Creative Workflow?</h2>
+                <p>Join 50,000+ creators who are already using Capsule AI to bring their ideas to life</p>
+                <div class="cta-actions">
+                    <a href="/app" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        Start Creating Free
+                    </a>
+                    <a href="#pricing" class="btn btn-secondary btn-large">
+                        <i class="fas fa-tags"></i>
+                        View Pricing
+                    </a>
+                </div>
+                <p class="cta-footer">No credit card required • 50 free credits • Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-capsule"></i>
+                        <span>Capsule AI</span>
+                    </div>
+                    <p>Transform your ideas into stunning visuals with the most advanced AI image generation platform.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="/app">Web App</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="/api">API</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/press">Press</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/help">Help Center</a></li>
+                        <li><a href="/docs">Documentation</a></li>
+                        <li><a href="/community">Community</a></li>
+                        <li><a href="/status">System Status</a></li>
+                        <li><a href="/contact">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="/cookies">Cookie Policy</a></li>
+                        <li><a href="/dmca">DMCA</a></li>
+                        <li><a href="/licenses">Licenses</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Capsule AI. All rights reserved.</p>
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">SOC 2 Certified</span>
+                    <span class="badge">GDPR Compliant</span>
+                    <span class="badge">PCI DSS</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/js/capsule-ai.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>
